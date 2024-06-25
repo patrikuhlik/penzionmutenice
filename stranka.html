@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penzion Mutěnice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+        }
+        .navbar img {
+            height: 100px;
+        }
+        .navbar .menu {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 10px 15px;
+            transition: background 0.3s;
+        }
+        .navbar .menu a:hover {
+            background-color: #575757;
+        }
+        .navbar .flags {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .flags img {
+            height: 20px;
+            cursor: pointer;
+        }
+        .navbar .flags .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .navbar .flags .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 50px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .navbar .flags .dropdown-content a {
+            color: white;
+            padding: 5px 10px;
+            text-decoration: none;
+            display: block;
+        }
+        .navbar .flags .dropdown-content a:hover {
+            background-color: #575757;
+        }
+        .navbar .flags .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .main-content {
+            display: flex;
+            margin: 20px;
+        }
+        .main-content img {
+            max-width: 50%;
+            margin-right: 20px;
+        }
+        .main-content .text {
+            max-width: 50%;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 200px;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .footer {
+            background-color: #;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="file:///C:/Users/patri/Downloads/Sn%C3%ADmek_obrazovky_2024-06-14_155413-removebg-preview.png" alt="Logo">
+        </div>
+        <div class="menu">
+            <a href="file:///C:/Users/patri/Downloads/o%20mutenic.html">O Mutěnicích</a>
+            <a href="#rezervace">Rezervace</a>
+            <a href="#v-okoli-mutenic">V okolí Mutěnic</a>
+            <a href="#kontakt">Kontakt</a>
+            <a href="#fotogalerie">Fotogalerie</a>
+        </div>
+        <div class="flags">
+          
+      
+             
+                    <a href="#" id="flag-de"><img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" alt="DE" style="height: 20px;"></a>
+                    <a href="#" id="flag-en"><img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="EN" style="height: 20px;"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <img src="https://www.vinarstvivrba.cz/img/fotky/vrba-05.jpg" alt="Penzion Mutěnice">
+        <div class="text">
+            <h1 style="text-align:center;">Vítejte v Penzionu Mutěnice</h1>
+            <p>Penzion Mutěnice je ideálním místem pro všechny milovníky vína, krásné přírody a relaxace. Nacházíme se v srdci jižní Moravy, v malebné vinařské obci Mutěnice, která je známá svými vinicemi a tradičními vinnými sklípky. Naše ubytování nabízí pohodlné a útulné pokoje, které jsou ideální jak pro rodinné dovolené, tak pro romantické pobyty ve dvou.</p>
+        </div>
+    </div>
+    <script>
+       
+	   document.getElementById('flag-de').addEventListener('click', function() {
+            translatePage('de');
+        });
+        document.getElementById('flag-en').addEventListener('click', function() {
+            translatePage('en');
+        });
+
+        function translatePage(lang) {
+            // Přidejte kód pro překlad obsahu stránky do zvoleného jazyka
+            if (lang === 'de') {
+                // Překlad do němčiny
+                document.querySelector('.text h1').innerText = 'Willkommen im Penzion Mutěnice';
+                document.querySelector('.text p').innerText = 'Das Penzion Mutěnice ist der ideale Ort für alle Weinliebhaber, Naturliebhaber und Erholungssuchende. Wir befinden uns im Herzen Südmährens, im malerischen Weindorf Mutěnice, das für seine Weinberge und traditionellen Weinkeller bekannt ist. Unsere Unterkunft bietet komfortable und gemütliche Zimmer, die sowohl für Familienurlaube als auch für romantische Aufenthalte zu zweit ideal sind.';
+                // Pokračujte s dalšími překlady...
+            } else if (lang === 'en') {
+                // Překlad do angličtiny
+                document.querySelector('.text h1').innerText = 'Welcome to Penzion Mutěnice';
+                document.querySelector('.text p').innerText = 'Penzion Mutěnice is the ideal place for all wine lovers, nature enthusiasts, and relaxation seekers. We are located in the heart of South Moravia, in the picturesque wine village of Mutěnice, which is known for its vineyards and traditional wine cellars. Our accommodation offers comfortable and cozy rooms that are perfect for family vacations as well as romantic stays for two.';
+                // Pokračujte s dalšími překlady...
+            }
+        }
+    </script>
+</body>
+</html>
+
+<h1 style="text-align:center;">Moderní ubytování v srdci Jižní Moravy</h1>
+<p style="text-align:center;">Moderně vybavené pokoje s veškerým komfortem pro váš pohodlný pobyt.</p>
+  
+        <div class="gallery">
+            <img src="file:///C:/Users/patri/Downloads/39bfb5ce-7466-4ef6-8b77-8b1cf389c46e.JPEG" alt="Galerie 1">
+            <img src="file:///C:/Users/patri/Downloads/caccb6b3-f55b-4d06-aebc-5e0364c1fb00%20(1).JPEG" alt="Galerie 2">
+            <img src="file:///C:/Users/patri/Downloads/6d800c6c-0543-4907-aa21-e3cf20f82d4a.JPEG" alt="Galerie 3">
+        </div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
